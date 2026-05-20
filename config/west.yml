@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/DoctorWangWang
     - name: zzeneg # <-- required for Raw HID module
       url-base: https://github.com/zzeneg
+    - name: srwi
+      url-base: https://github.com/srwi/keypeek
   projects:
     - name: zmk
       remote: zmkfirmware
