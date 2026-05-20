@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: DoctorWangWang
       url-base: https://github.com/DoctorWangWang
-    - name: srwi # <-- required for KeyPeek module
-      url-base: https://github.com/srwi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,9 +12,6 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: DoctorWangWang
       revision: main
-    - name: zmk-keypeek-layer-notifier # <-- KeyPeek module
-      remote: srwi
-      revision: master
       
   self:
     path: config
