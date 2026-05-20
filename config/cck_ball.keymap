@@ -81,7 +81,7 @@
 &kp TAB           &kp Q         &kp W         &kp E     &kp R   &kp T      &kp Y      &kp U   &kp I      &kp O       &kp P          &kp EQUAL
 &kp CAPSLOCK      &kp A         &kp S         &kp D     &kp F   &kp G      &kp H      &kp J   &kp K      &kp L       &kp SEMI       &kp SQT
 &kp LEFT_SHIFT    &kp Z         &kp X         &kp C     &kp V   &kp B      &kp N      &kp M   &kp COMMA  &kp DOT     &kp SLASH      &kp GRAVE
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LGUI  &mo 1   &kp SPACE  &kp SPACE  &mo 2   &kp ENTER  &kp DELETE  &kp BACKSLASH  &kp BACKSPACE
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LGUI  &mo 1   &kp SPACE  &kp SPACE  &mo 1   &kp ENTER  &kp DELETE  &kp BACKSLASH  &kp BACKSPACE
             >;
 
             sensor-bindings =
@@ -98,19 +98,23 @@
 &to 0      &to 1    &to 2   &trans  &trans        &trans        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp HOME END>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         L3 {
             bindings = <
-&to 0   &trans  &trans  &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
-&trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp F22
-&trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+&to 0        &trans  &trans  &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp F21
+&trans       &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp F22
+&trans       &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+&trans       &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+&bootloader  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &bootloader
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         L4 {
@@ -122,7 +126,9 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         L5 {
@@ -136,7 +142,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,
+                // 编码器1：上下滚动,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
