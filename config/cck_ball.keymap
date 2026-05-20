@@ -72,6 +72,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        especial {
+            bindings = <&mo 6>;
+            key-positions = <52 55>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -95,7 +104,7 @@
 &trans     &none    &none   &none   &trans        &trans        &none            &msc SCRL_UP    &none            &otilde         &kp PAGE_UP     &kp F12
 &trans     &atilde  &none   &none   &kp LS(LBRC)  &kp LS(RBRC)  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp HOME        &kp PAGE_DOWN   &kp END
 &trans     &trans   &trans  &cedil  &kp LBKT      &kp RBKT      &kp PRINTSCREEN  &none           &trans           &trans          &kp UP_ARROW    &trans
-&to 0      &to 1    &to 2   &trans  &trans        &trans        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&trans     &trans   &trans  &trans  &trans        &trans        &mkp LCLK        &mkp MCLK       &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
             >;
 
             sensor-bindings =
@@ -142,7 +151,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,
+                // 编码器1：上下滚动,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
@@ -160,7 +169,7 @@
 
         L7 {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0   &to 1   &to 2   &to 3   &to 4   &to 5   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
