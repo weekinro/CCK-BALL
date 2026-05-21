@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice-nano-v2        # <-- Mudado para hífen
+  - board: nice_nano        # <-- Mudado para hífen
     shield: cck_ball_left
-  - board: nice-nano-v2        # <-- Mudado para hífen
+  - board: nice_nano        # <-- Mudado para hífen
     shield: cck_ball_right
-  - board: nice-nano-v2        # <-- Mudado para hífen
+  - board: nice_nano        # <-- Mudado para hífen
     shield: settings_reset
