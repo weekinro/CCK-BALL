@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main # <-- Mude de v0.3 para main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: DoctorWangWang
