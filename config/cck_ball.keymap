@@ -78,21 +78,27 @@
         bootleft {
             bindings = <&bootloader>;
             key-positions = <52 51 53>;
+            timeout-ms = <50>;
         };
 
         bootright {
             bindings = <&bootloader>;
             key-positions = <54 55 56>;
+            timeout-ms = <50>;
         };
 
         ToL0 {
             bindings = <&to 0>;
             key-positions = <0 52 55>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
         };
 
         ToL1 {
             bindings = <&to 1>;
             key-positions = <52 55 1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <200>;
         };
     };
 
