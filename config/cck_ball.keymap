@@ -94,16 +94,6 @@
             bindings = <&to 1>;
             key-positions = <52 55 1>;
         };
-
-        ToL2 {
-            bindings = <&to 2>;
-            key-positions = <52 55 2>;
-        };
-
-        ToL3 {
-            bindings = <&to 3>;
-            key-positions = <52 55 3>;
-        };
     };
 
     keymap {
@@ -129,7 +119,7 @@
 &trans     &none    &none   &none   &trans        &trans        &none            &msc SCRL_UP    &none            &otilde         &kp PAGE_UP     &kp F12
 &trans     &atilde  &none   &none   &kp LS(LBRC)  &kp LS(RBRC)  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp HOME        &kp PAGE_DOWN   &kp END
 &trans     &trans   &trans  &cedil  &kp LBKT      &kp RBKT      &kp PRINTSCREEN  &none           &trans           &trans          &kp UP_ARROW    &trans
-&trans     &trans   &trans  &trans  &trans        &trans        &mkp LCLK        &trans          &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&to 0      &to 1    &to 2   &trans  &trans        &trans        &mkp LCLK        &trans          &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
             >;
 
             sensor-bindings =
@@ -143,7 +133,7 @@
 &trans  &trans  &trans  &kp F23  &kp F24  &trans   &trans   &trans   &trans   &trans   &trans   &kp F22
 &trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp F23
 &trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp F24
-&trans  &trans  &trans  &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+&to 0   &to 1   &to 2   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
             >;
 
             sensor-bindings =
@@ -176,7 +166,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
