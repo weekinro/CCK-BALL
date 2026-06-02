@@ -126,11 +126,11 @@
 
         L1 {
             bindings = <
-&kp TILDE  &kp F1   &kp F2  &kp F3  &kp F4        &kp F5        &kp F6           &kp F7          &kp F8           &kp F9          &kp F10         &kp F11
-&trans     &none    &none   &none   &trans        &trans        &none            &msc SCRL_UP    &none            &otilde         &kp PAGE_UP     &kp F12
-&trans     &atilde  &none   &none   &kp LS(LBRC)  &kp LS(RBRC)  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp HOME        &kp PAGE_DOWN   &kp END
-&trans     &trans   &trans  &cedil  &kp LBKT      &kp RBKT      &kp PRINTSCREEN  &none           &trans           &trans          &kp UP_ARROW    &trans
-&to 0      &to 1    &to 2   &trans  &trans        &trans        &mkp LCLK        &trans          &mkp RCLK        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&kp TILDE  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7          &kp F8        &kp F9           &kp F10          &kp F11
+&trans     &trans   &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp PRINTSCREEN  &kp F12
+&trans     &atilde  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &kp LS(LBRC)     &kp LS(RBRC)
+&trans     &trans   &trans  &cedil  &trans  &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &kp LBKT         &kp RBKT
+&trans     &trans   &trans  &trans  &trans  &trans  &mkp LCLK       &trans          &mkp RCLK     &trans           &trans           &trans
             >;
 
             sensor-bindings =
@@ -177,7 +177,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
