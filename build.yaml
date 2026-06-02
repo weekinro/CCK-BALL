@@ -13,11 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cck_ball_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cck_ball_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
