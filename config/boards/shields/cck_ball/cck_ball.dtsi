@@ -6,6 +6,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layouts = &physical_layout0;
+        zmk,underglow = &led_strip;
     };
 
     matrix_transform0: keymap_transform_0 {
