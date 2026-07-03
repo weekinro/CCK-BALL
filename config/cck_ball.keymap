@@ -59,6 +59,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <41 42>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
