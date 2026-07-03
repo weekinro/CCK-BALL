@@ -21,3 +21,4 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
     shield: settings_reset
+
